@@ -4,28 +4,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
+  <title>Polite Mail | Group Project by Team #2</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
 </head>
 
 <body>
-  <header>
-    <h1>Boss Mail</h1>
-  </header>
-  {{!-- <nav>
-    <a href="/">Home</a>
-    <a href="/generate">Generate</a>
-    <a href="/contact">Contact</a>
-  </nav> --}}
+ 
+  <nav>
+     <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <a href="/professional-email">Professional E-mail</a> |
+        <a href="/appreciationletter">Appreciation Letter</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        <a href="/contact">Contact</a>
+        {{/if}}
+
+        <!--
+        <a href="/">Home</a>
+        <a href="/generate">Generate</a>
+        <a href="/contact">Contact</a>
+        -->
+  </nav>
+
   <main>
-    {{!-- <aside>
-      <h2>Fuck yo  boss</h2>
-    </aside> --}}
     <div class="gallery">
       {{{body}}}
     </div>
   </main>
+
+  <footer>
+
+  </footer>
+  <!-- Render script for logged in users only -->
+  
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
 </body>
 
 </html>

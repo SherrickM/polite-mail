@@ -19,5 +19,11 @@ router.get("/login", (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
+router.get("/appreication_template", (req, res) => {
+  res.render("appreication");
+});
+router.get("/email_template", (req, res) => {
+  res.render("appreication");
+});
 
 module.exports = router;
