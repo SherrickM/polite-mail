@@ -23,7 +23,7 @@ router.get("/appreication_template", (req, res) => {
   res.render("appreication");
 });
 router.get("/email_template", (req, res) => {
-  res.render("appreication");
+  res.render("email_template");
 });
 
 module.exports = router;
