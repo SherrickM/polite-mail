@@ -1,10 +1,11 @@
 :root {
-  --primary: #3d5852;
-  --secondary: #86938f;
-  --tertiary: #5e877f;
+  --dark-red: #9E353A;
+  --light-red: #B46A29;
+  --white: #FFFFFF;
+  --black: #000000;
   --quatrinary: #6c6b67;
-  --light: #e3e4e3;
-  --dark: #182c23;
+  --light: #335B7C;
+  --dark: #525461;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
@@ -19,6 +20,14 @@ body {
   background-color: var(--quatrinary);
 }
 
+h1, h2, h3, h3, h5, h6 {
+  font-family: 'Noto Serif', serif;
+}
+
+p {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
 a {
   color: var(--dark);
   text-decoration: none;
@@ -29,10 +38,7 @@ a:visited {
 }
 
 header {
-  padding: 40px;
-  text-align: center;
-  background: var(--primary);
-  color: var(--light);
+  background-color: var(--dark-red);
 }
 
 main {
@@ -50,20 +56,19 @@ aside {
 }
 
 nav {
-  display: flex;
-  background-color: var(--secondary);
+  
 }
 
 nav a {
-  color: var(--light);
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+  color: var(--white);
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  background-color: var(--light);
+}
+
+nav a:visited {
+  color: var(--white);
 }
 
 .gallery {
@@ -168,3 +173,5 @@ img {
   flex-flow: row wrap;
   justify-content: center;
 }
+
+/** Logo Animation **/
