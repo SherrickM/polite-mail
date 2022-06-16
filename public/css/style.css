@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+.bg-light-red {
+  background-color: var(--light-red);
+}
+
 a:visited {
   color: inherit;
 }
