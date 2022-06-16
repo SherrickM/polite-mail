@@ -26,4 +26,8 @@ router.get("/email_template", (req, res) => {
   res.render("email_template");
 });
 
+router.get("/home", (req, res) => {
+  res.render("home");
+});
+
 module.exports = router;
