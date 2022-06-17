@@ -106,9 +106,12 @@ a:visited {
 }
 
 header {
-  padding: 40px;
+  padding: 0 40px;
 }
-
+.logo img {
+  max-width: 70px;
+  margin: 10px auto 0;
+}
 main {
   display: flex;
   flex-wrap: wrap;
