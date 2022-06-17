@@ -1,8 +1,27 @@
-this will before login with welcome and signup and login option
-<div>
-  <h1> Title of the website or other description</h1>
-  <div>
-     <a href="/login"><button>login</button></a>
-    <a href="/signup"><button>signup</button></a>
-  </div>
-</div>
+
+<header class="bg-light-gray flex items-center justify-between pb-2">
+    <div class="logo">
+      <a href="/"> <img src="/images/Polite-Email.png" alt="Polite-Mail"> </a>
+    </div>
+    <nav class="flex items-center text-base leading-5">
+      <div class="container mx-auto flex flex-col lg:flex-row list-none mr-auto">
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a class="p-1 font-medium sm:p-4" href="/profile">profile</a> |
+        <a class="p-1 font-medium sm:p-4" href="/professional-email">Professional E-mail</a> |
+        <a class="p-1 font-medium sm:p-4" href="/appreciationletter">Appreciation Letter</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a class="p-1 rounded-lg font-medium sm:p-4" href="/contact">Contact</a>
+        <a class="signUpBtn border rounded-lg bg-opacity-20 py-3 px-6 text-base font-medium duration-300 ease-in-out hover:bg-opacity-100" href="/login">login</a>        
+        {{/if}}
+  
+        <!--
+            <a href="/">Home</a>
+            <a href="/generate">Generate</a>
+            <a href="/contact">Contact</a>
+            -->
+      </div>
+    </nav>
+  </header>
+

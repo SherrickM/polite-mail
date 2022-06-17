@@ -19,7 +19,6 @@ const PORT = process.env.PORT || 3001;
 // app.use(session(sess));
 
 // const hbs = exphbs.create({ helpers });
-
 // app.engine("handlebars", hbs.engine);
 
 // Default Layout For express handelebars
