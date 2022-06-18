@@ -43,15 +43,15 @@ router.get("/login", (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreication_template", (req, res) => {
-  res.render("appreication");
+router.get("/appreciation_template", (req, res) => {
+  res.render("appreciation");
 });
 router.get("/email_template", (req, res) => {
   res.render("email_template");
 });
 
 router.get("/home", withAuth, async (req, res) => {
-  const userData = await User.findByPk(req.seesion.user-id);
+  const userData = await User.findByPk(req.session.user-id);
   const user = userData.get({plain: true});
 
   res.render("home",{
