@@ -1,4 +1,6 @@
 const router = require("express").Router();
+const {User} = require ('../models')
+const withAuth = require('../utils/auth');
 
 router.get("/", (req, res) => {
   res.render("landing");
@@ -41,15 +43,23 @@ router.get("/login", (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreication_template", (req, res) => {
-  res.render("appreication");
+router.get("/appreciation_template", (req, res) => {
+  res.render("appreciation");
 });
 router.get("/email_template", (req, res) => {
   res.render("email_template");
 });
 
-router.get("/home", (req, res) => {
-  res.render("home");
+router.get("/home", withAuth, async (req, res) => {
+  const userData = await User.findByPk(req.session.user-id);
+  const user = userData.get({plain: true});
+
+  res.render("home",{
+    user : {
+      name: user.name,
+      email: user.email
+    }
+  });
 });
 
 module.exports = router;
