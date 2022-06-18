@@ -148,14 +148,11 @@ nav a:hover {
 }
 
 .main-content {
-  flex: 4;
-  background-color: #fff;
-  padding: 50px;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   background-image: url(/images/background-pattern.jpg);
+  height: 100vh;
 }
 
 .btn-no-style {
