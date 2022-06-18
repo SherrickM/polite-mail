@@ -1,14 +1,17 @@
 const sequelize = require('../config/connection');
-const seedGallery = require('./galleryData');
-const seedPaintings = require('./paintingData');
+const { User, Template} = require('../models');
+
+
+const userData = require('./userData.json');
+// const seedPaintings = require('./paintingData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
 
-  await seedGallery();
-
-  await seedPaintings();
-
+  const users = await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  });
   process.exit(0);
 };
 
