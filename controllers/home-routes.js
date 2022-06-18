@@ -9,9 +9,31 @@ router.get("/", (req, res) => {
 router.get("/generate", (req, res) => {
   res.render("generate");
 });
+// this is a test. do not delete
+router.get("/contact", async (req, res) => {
+  // Create an array of object with name fav food
+  try {
+    const nameData = [
+      {
+        name: "ruck",
+        food: "chicken",
+      },
+      {
+        name: "john",
+        food: "burger",
+      },
+      {
+        name: "vick",
+        food: "pizza",
+      },
+    ];
+    // const names = nameData.map((name) => name);
 
-router.get("/contact", (req, res) => {
-  res.render("contact");
+    // console.log(names);
+    res.render("contact", { names: nameData });
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 router.get("/login", (req, res) => {
