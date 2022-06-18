@@ -39,6 +39,8 @@ a {
   text-decoration: none;
 }
 
+/** background colors **/
+
 .bg-dark-red {
   background-color: var(--dark-red);
 }
@@ -70,6 +72,8 @@ a {
   background-color: var(--black);
 }
 
+/** text colors **/
+
 .text-dark-red {
   color: var(--dark-red);
 }
@@ -82,8 +86,8 @@ a {
 .text-turquoise {
   color: var(--turquoise);
 }
-.text-none {
-  color: var();
+.text-mauve {
+  color: var(--mauve);
 }
 .text-dark-purple {
   color: var(--dark-purple);
@@ -99,6 +103,49 @@ a {
 }
 .text-black {
   color: var(--black);
+}
+
+/** border colors **/
+
+.border-dark-red {
+  border-color: var(--dark-red);
+  border-width: 2px !important;
+}
+.border-dark-gray {
+  border-color: var(--dark-gray);
+  border-width: 2px !important;
+}
+.border-light-gray {
+  border-color: var(--light-gray);
+  border-width: 2px !important;
+}
+.border-turquoise {
+  border-color: var(--turquoise);
+  border-width: 2px !important;
+}
+.border-mauve {
+  border-color: var(--mauve);
+  border-width: 2px !important;
+}
+.border-dark-purple {
+  border-color: var(--dark-purple);
+  border-width: 2px !important;
+}
+.border-brown {
+  border-color: var(--brown);
+  border-width: 2px !important;
+}
+.border-green {
+  border-color: var(--green);
+  border-width: 2px !important;
+}
+.border-white {
+  border-color: var(--white);
+  border-width: 2px !important;
+}
+.border-black {
+  border-color: var(--black);
+  border-width: 2px !important;
 }
 
 a:visited {
@@ -149,6 +196,7 @@ nav a:hover {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-image: url(/images/background-pattern.jpg);
