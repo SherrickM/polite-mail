@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
+// hooks check password
 class User extends Model {}
 
 User.init(
@@ -31,6 +31,7 @@ User.init(
       },
     },
   },
+  // add hooks!
   {
     sequelize,
     timestamps: false,
