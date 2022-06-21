@@ -14,7 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<header class="bg-light-gray flex items-center justify-between pb-2">
+<header class="flex items-center justify-between pb-2">
     <div class="logo">
       <a href="/"> <img src="/images/Polite-Email.png" alt="Polite-Mail"> </a>
     </div>
@@ -45,7 +45,29 @@
       {{{body}}}
     </div>
   
-  <footer>  </footer>
+  <footer class="pb-5">
+    <div class="container m-auto p-8 text-white">
+      <div class="flex -mx-2 mb-8">
+        <div class="w-1/3 px-2">
+            <div class="bg-grey-light h-12">Polite-Mail.</div>
+        </div>
+        <div class="w-1/3 px-2">
+            <div class="bg-grey h-12">
+              <h3>The Team</h3>
+              <p><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i> Christiana</a></p>
+              <p><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i> Gedion</a></p>
+              <p><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i> Sherrick</a></p>
+              <p><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i> Hasnain</a></p>
+            </div>
+        </div>
+        <div class="w-1/3 px-2">
+            <div class="bg-grey-light h-12">
+              <a href="https://github.com/SherrickM/polite-mail" target="_blank"><i class="text-6xl fa-brands fa-github-square"></i> Project Repository</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Render script for logged in users only -->
   
   {{#if logged_in}}

@@ -154,6 +154,8 @@ a:visited {
 
 header {
   padding: 0 40px;
+  background: rgb(83,44,134);
+  background: linear-gradient(90deg, rgba(83,44,134,1) 0%, rgba(83,44,134,1) 35%, rgba(189,93,90,1) 100%);
 }
 .logo img {
   max-width: 70px;
@@ -178,17 +180,20 @@ nav {
 }
 
 nav a {
-  color: var(--dark-gray);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 20px;
 }
 nav a:last-child {
   color: var(--white);
-  background-color: var(--dark-red);
+  background-color: var(--dark-purple);
+}
+nav a:visited {
+  color: var(--white);
 }
 nav a:hover {
-  color: var(--white);
-  background-color: var(--turquoise);
+  color: var(--black);
 }
-
 .login-logo img {
   max-width: 100px;
   margin: 30px auto 0;
@@ -205,35 +210,10 @@ nav a:hover {
   min-height: 100vh;
 }
 
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 100%;
-  transition: color 0.1s;
-  margin-left: 16px;
+footer {
+  background: rgb(83,44,134);
+  background: radial-gradient(circle, rgba(83,44,134,1) 0%, rgba(189,93,90,1) 100%);
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
 /** Input options **/
 
 #screen-two, #screen-three, #screen-four {
