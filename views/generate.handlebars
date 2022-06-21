@@ -1,7 +1,6 @@
-
-<section>
-     <div class="container flex flex-row">
-          <div class="-mx-4 flex flex-wrap">
+<section class="flex flex-row justify-center w-full items-start text-center mb-10">
+     <div class="container flex flex-row w-full">
+          <div class="-mx-4 flex flex-wrap w-full">
                <div class="w-full px-4">
                     <h1 class="text-mauve">Page where we will generate the mail templates</h1>
                     <p class="text-2xl text-dark-gray">An introductory text to give some direction on what is the process of generating a mail</p>
@@ -10,32 +9,106 @@
      </div>
 </section>
 
-<section>
+<section class="flex flex-row justify-center w-full">
      <div class="container flex flex-row">
           <div class="flex -mx-2 mb-8">
-                    <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">  
-                         <div class="border border-dark-red overflow-hidden rounded-lg bg-white px-20 text-center py-8">
-                              <!-- <div class="text-6xl text-dark-red mb-6"><i class="fa-brands fa-atlassian"></i></div> -->
-                              <div class="text-6xl text-dark-red mb-6"><i class="fa-brands fa-jedi-order"></i></div>
-                              <h1>Start the generate email</h1>
+                    <div class="flex w-full md:w-1/2 lg:w-1/4 px-2">  
+                         <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-white px-5 text-center py-8">                              
+                              <div class="text-6xl text-turquoise mb-6"><i class="fa-brands fa-atlassian"></i></div>
+                              <h2>Start the generate email</h2>
 
-                              input prompts with fields
+                              <div class="w-full" id="screen-one"> <!-- Start screen one --FORM -->
+                                   <form class="form user-input-form id="user-input-form"">
+                                        <div class="form-group">
+                                             <label class="opacity-0" for="first-name">First Name</label>
+                                             <input class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input" placeholder="First Name" type="text" value="" id="first-name" />
+                                        </div>
+                                        <div class="form-group">
+                                              <label class="opacity-0" for="recipient-name">Recipient Name</label>
+                                             <input class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input" placeholder="Recipient Name" type="text" value="" id="recipient-name" />
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="opacity-0" for="email-address">Email Address</label>
+                                             <input class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input" placeholder="Email Address" type="text" value="" id="email-address" />
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="opacity-0" for="email-concern">password:</label>
+                                             <textarea class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input" rows="4" cols="50" placeholder="Email Concern" type="text" value="" id="email-concern" /></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <button class="bordder-primary w-full cursor-pointer rounded-md border bg-green py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" id="submit-screen-one">Submit</button>
+                                        </div>
+                                   </form>
+                              </div>  <!-- End screen one -->
+
+                              <div class="w-full" id="screen-two"> <!-- Start screen two -->
+                                   <h2>Screen 2 - Intro</h2>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="intro-option-a" id="intro-option-a">Intro Option A</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="intro-option-b" id="intro-option-b">Intro Option B</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="intro-option-c" id="intro-option-c">Intro Option C</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="intro-option-d" id="intro-option-d">Intro Option D</button>
+                                   </div>
+                              </div>  <!-- End screen two -->
+
+                              <div class="w-full" id="screen-three"> <!-- Start screen two -->
+                                   <h2>Screen 3 - body</h2>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="body-option-a" id="body-option-a">Body Option A</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="body-option-b" id="body-option-b">Body Option B</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="body-option-c" id="body-option-c">Body Option C</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="body-option-d" id="body-option-d">Body Option D</button>
+                                   </div>
+                              </div>  <!-- End screen three -->
+
+                              <div class="w-full" id="screen-four"> <!-- Start screen four -->
+                                   <h2>Screen 4 - future</h2>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="future-option-a" id="future-option-a">Future Option A</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="future-option-b" id="future-option-b">Future Option B</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="future-option-c" id="future-option-c">Future Option C</button>
+                                   </div>
+                                   <div class="w-full">
+                                        <button class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 " type="submit" value="future-option-d" id="future-option-d">Future Option D</button>
+                                   </div>
+                              </div>  <!-- End screen four -->
+
+
                          </div>
                     </div>
-                    <div class="w-full lg:w-1/2 px-2">  
-                         <div class="border border-dark-red overflow-hidden rounded-lg bg-white px-20 text-center py-8">
+                    <!-- Generated Mail section -->
+                    <div class="flex w-full lg:w-1/2 px-2">  
+                         <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-white px-10 text-center py-8">
                               <div class="text-6xl text-dark-red mb-6"><i class="fa-solid fa-envelope-circle-check"></i></div>
-                              <h1>mail preview/generated history mail</h1>
+                              <h1>this section is where the generated mail will be displayed</h1>
                          </div>
                     </div>
-                    <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">  
-                         <div class="border border-dark-red overflow-hidden rounded-lg bg-light-gray px-20 text-center py-8">
-                              <div class="text-6xl text-dark-red mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    
+                    <!-- History section -->
+                    <div class="flex w-full md:w-1/2 lg:w-1/4 px-2">  
+                         <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
+                              <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
                               <h1>History</h1>
+                              <p>History of previously generated email template</p>
                          </div>
                     </div>
           </div> 
                            
      </div>
 </section>
-   
