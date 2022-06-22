@@ -7,9 +7,16 @@ router.get("/", (req, res) => {
 });
 
 router.get("/generate", withAuth, (req, res) => {
-
-  res.render("generate", );
+  res.render('generate', {
+         logged_in: true
+    });
+ 
 });
+  
+  
+
+  
+
 // this is a test. do not delete
 router.get("/contact", async (req, res) => {
   // Create an array of object with name fav food
