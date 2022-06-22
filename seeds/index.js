@@ -12,7 +12,7 @@ const seedAll = async () => {
     individualHooks: true,
     returning: true,
   });
-  // process.exit(0);
+  process.exit(0);
 };
 
 seedAll();
