@@ -1,1 +1,0 @@
-const john = document.querySelector('.j')
