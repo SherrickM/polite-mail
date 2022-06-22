@@ -216,7 +216,7 @@ footer {
 }
 /** Input options **/
 
-#screen-two, #screen-three, #screen-four {
+.hide {
   display: none;
 }
 .is-loaded {
