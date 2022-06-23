@@ -38,6 +38,12 @@ a {
   color: var(--dark);
   text-decoration: none;
 }
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: var(--white);
+}
 
 /** background colors **/
 
@@ -146,10 +152,6 @@ a {
 .border-black {
   border-color: var(--black);
   border-width: 2px !important;
-}
-
-a:visited {
-  color: inherit;
 }
 
 header {
