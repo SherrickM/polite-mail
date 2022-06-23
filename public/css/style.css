@@ -175,19 +175,33 @@ aside {
   color: var(--turquoise);
 }
 
-nav {
-  
-}
 
 nav a {
   color: var(--white);
   text-transform: uppercase;
   font-size: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 nav a:last-child {
   color: var(--white);
   background-color: var(--dark-purple);
 }
+
+nav .btn-logout {
+  color: var(--white);
+  background-color: var(--dark-purple);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+nav .btn-logout:hover {
+  color: var(--black);
+}
+
 nav a:visited {
   color: var(--white);
 }
@@ -199,6 +213,10 @@ nav a:hover {
   margin: 30px auto 0;
 }
 
+nav .nav-divider {
+  position: relative;
+  top:8px;
+}
 .main-content {
   display: flex;
   flex-wrap: wrap;
