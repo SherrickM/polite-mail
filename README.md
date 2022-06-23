@@ -38,10 +38,3 @@
 
 
 
-Wednesday (22)  - end of class
-completed project 2 with minor bugs
-partial work done on presentations
-Saturday (25)
-Q&A (prep for times of interview)
-Camera's on (I treat presentation day like interview day, camera on all day)
-(edited)
