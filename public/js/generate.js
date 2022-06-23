@@ -42,6 +42,8 @@ function generateEmail(){
   // document.getElementById("generate").addEventListener("click", writeEmail);
   // function writeEmail() {document.write(userchoice)}
   messageText.textContent=userChoice;
+  alltext.value=userChoice;
+  
   $("#saveEmail").show();
     console.log(emailObject);
   console.log(userChoice);
