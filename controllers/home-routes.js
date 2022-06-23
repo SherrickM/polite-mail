@@ -56,7 +56,7 @@ router.get("/login", async (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreciation_template", (req, res) => {
+router.get("/appreciation", (req, res) => {
   res.render("appreciation");
 });
 router.get("/email_template", (req, res) => {

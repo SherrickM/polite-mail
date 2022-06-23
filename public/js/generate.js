@@ -99,3 +99,4 @@ outro.forEach((element) => {
 // Add a fucntion to generate e-mail to hide container and display the template literal
 
 generateBtn.addEventListener("click", generateEmail);
+
