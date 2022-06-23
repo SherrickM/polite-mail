@@ -241,6 +241,10 @@ footer {
   display: block !important;
 }
 
+
+#saveEmail {
+  display: none;
+
 /** Buttons **/
 .primary-button {}
 .primary-button:hover {
