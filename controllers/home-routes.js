@@ -6,9 +6,17 @@ router.get("/", (req, res) => {
   res.render("landing");
 });
 
-router.get("/generate", (req, res) => {
-  res.render("generate");
+router.get("/generate", withAuth, (req, res) => {
+  res.render('generate', {
+         logged_in: true
+    });
+ 
 });
+  
+  
+
+  
+
 // this is a test. do not delete
 router.get("/contact", async (req, res) => {
   // Create an array of object with name fav food
@@ -36,30 +44,27 @@ router.get("/contact", async (req, res) => {
   }
 });
 
-router.get("/login", (req, res) => {
+router.get("/login", async (req, res) => {
+  if(req.session.logged_in){
+    res.redirect("/generate");
+    return;
+  }
+
   res.render("login");
 });
 
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreciation_template", (req, res) => {
+router.get("/appreciation", (req, res) => {
   res.render("appreciation");
 });
 router.get("/email_template", (req, res) => {
   res.render("email_template");
 });
 
-router.get("/home", withAuth, async (req, res) => {
-  const userData = await User.findByPk(req.session.user-id);
-  const user = userData.get({plain: true});
-
-  res.render("home",{
-    user : {
-      name: user.name,
-      email: user.email
-    }
-  });
+router.get("/home", async (req, res) => {
+  res.render("home");
 });
 
 module.exports = router;
