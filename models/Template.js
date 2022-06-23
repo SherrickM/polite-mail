@@ -11,21 +11,12 @@ Template.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        // name: {
+        recipient_name: {
+            type: DataTypes.STRING,
+        },
+        // category: {
         //     type: DataTypes.STRING,
-
         // },
-        category: {
-            type: DataTypes.STRING,
-        },
-        recipient_email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true,
-            },
-        },
         message: {
             type: DataTypes.STRING,
             allowNull: false,
