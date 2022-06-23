@@ -1,8 +1,7 @@
 const firstName = document.getElementById("first-name");
 
-const recipientName = document.getElementById("recipient-name");
-const emailAddress = document.getElementById("email-address");
-const emailConcern = document.getElementById("email-concern");
+const lastName = document.getElementById("last-name");
+const subject = document.getElementById("email-concern");
 const introEl = document.querySelectorAll(".intro");
 const inputForm = document.getElementById("user-input-form");
 const screenOne = document.getElementById("screen-one");
@@ -19,6 +18,10 @@ const mailSection = document.getElementById("mail-section");
 const userChoice = [];
 // const generateHTML =  ;
 
+function generateSubject() {
+  document.getElementById("email-concern").value = document.getElementById("subjectLine").value;
+}
+
 let emailObject;
 // create function to capture form data. Save that info into an object thats global so that it can be used at a later time.
 
@@ -28,17 +31,19 @@ function start(event) {
 
   emailObject = {
     name: firstName.value,
-    recipientName: recipientName.value,
-    email: emailAddress.value,
-    emailConcern: emailConcern.value,
+    lastName: lastName.value,
+    subject: subject.value,
   };
   screenOne.classList.add("hide");
   screenTwo.classList.remove("hide");
 }
 
-// function to generate email
-function generateEmail() {
-  console.log(emailObject);
+function generateEmail(){
+  // document.getElementById("generate").addEventListener("click", writeEmail);
+  // function writeEmail() {document.write(userchoice)}
+  messageText.textContent=userChoice;
+  $("#saveEmail").show();
+    console.log(emailObject);
   console.log(userChoice);
 }
 
