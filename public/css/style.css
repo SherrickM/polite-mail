@@ -222,3 +222,7 @@ footer {
 .is-loaded {
   display: block !important;
 }
+
+#saveEmail {
+  display: none;
+}
