@@ -7,9 +7,16 @@ router.get("/", (req, res) => {
 });
 
 router.get("/generate", withAuth, (req, res) => {
-
-  res.render("generate", );
+  res.render('generate', {
+         logged_in: true
+    });
+ 
 });
+  
+  
+
+  
+
 // this is a test. do not delete
 router.get("/contact", async (req, res) => {
   // Create an array of object with name fav food
@@ -49,7 +56,7 @@ router.get("/login", async (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreciation_template", (req, res) => {
+router.get("/appreciation", (req, res) => {
   res.render("appreciation");
 });
 router.get("/email_template", (req, res) => {
