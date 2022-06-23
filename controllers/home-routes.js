@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const session = require("express-session");
-const {User} = require ('../models')
+const {User} = require ('../models');
+const {Template} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get("/", (req, res) => {
@@ -40,12 +41,52 @@ router.get("/appreciation", withAuth, async (req, res) => {
  
 });
 
-  
-  
+router.get('/', async (req, res) => {
+  try {
+    // Get all templates and JOIN with user data
+    const templateData = await Template.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
+    });
 
-  
+    // Serialize data so the template can read it
+    const templates = templateData.map((template) => template.get({ plain: true }));
 
+    // Pass serialized data and session flag into template
+    res.render('generate', { 
+      templates, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
+router.get('/templates/:id', async (req, res) => {
+  try {
+    const templateData = await Template.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username']
+        },
+      ],
+    });
+
+    const template = templateData.get({ plain: true });
+console.log(template);
+    res.render('template', {
+      ...template,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get("/login", async (req, res) => {
   if(req.session.logged_in){
@@ -69,5 +110,7 @@ router.get("/email_template", (req, res) => {
 router.get("/home", async (req, res) => {
   res.render("home");
 });
+
+
 
 module.exports = router;
