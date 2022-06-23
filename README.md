@@ -19,3 +19,29 @@
 
 ### Week 1
 
+- Proposal | Christiana
+- First page and first route written |Sherrick
+- Models decided and completed | Geidons
+- First Deployment | Sherrick
+- Handlebar Setup | Gedion 
+- HandleBar Framework | Hasnian
+- Front end partially written with all modules installed | Hasnian
+- Create wireframe & Color palette | Hasnian & Sherrick
+- Professional Choices | Christiana & Sherrick
+-  
+
+### Week 2
+
+- JS Funionality for choices | Sherrick
+- Create Models| Christina
+- Login & Signup Functionality | Gedion
+
+
+
+Wednesday (22)  - end of class
+completed project 2 with minor bugs
+partial work done on presentations
+Saturday (25)
+Q&A (prep for times of interview)
+Camera's on (I treat presentation day like interview day, camera on all day)
+(edited)
