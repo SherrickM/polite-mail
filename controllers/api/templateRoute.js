@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Template } = require('../../models');
 
+
 router.post('/', async (req, res) => {
     try {
       const newTemplate = await Template.create({
