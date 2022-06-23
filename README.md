@@ -23,18 +23,15 @@
 - First page and first route written |Sherrick
 - Models decided and completed | Geidons
 - First Deployment | Sherrick
-- Handlebar Setup | Gedion 
+- Handlebar Setup | Gedion
 - HandleBar Framework | Hasnian
 - Front end partially written with all modules installed | Hasnian
 - Create wireframe & Color palette | Hasnian & Sherrick
 - Professional Choices | Christiana & Sherrick
--  
+-
 
 ### Week 2
 
 - JS Funionality for choices | Sherrick
 - Create Models| Christina
 - Login & Signup Functionality | Gedion
-
-
-
