@@ -160,7 +160,7 @@ header {
   background: linear-gradient(90deg, rgba(83,44,134,1) 0%, rgba(83,44,134,1) 35%, rgba(189,93,90,1) 100%);
 }
 .logo img {
-  max-width: 70px;
+  max-width: 80%;
   margin: 10px auto 0;
 }
 main {

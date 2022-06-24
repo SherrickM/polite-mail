@@ -21,7 +21,7 @@
           <div class="text-6xl text-turquoise mb-6"><i
               class="fa-brands fa-atlassian"
             ></i></div>
-          <h2>Start the generate email, {{user.name}}</h2>
+          <h2>Start the generate email, <span class="text-mauve font-black">{{user.name}}</span></h2>
 
 
 
@@ -32,19 +32,19 @@
                 <label class="opacity-0" for="first-name">Your Name</label>
                 <input
                   class="border-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input"
-                  placeholder="Your Name" type="text" value="" id="sender-name" />
+                  placeholder="Your Name" type="text" value="" id="sender-name" required />
               </div>
               <div class="form-group">
                 <label class="opacity-0" for="recipient-name">Last Name</label>
                 <input
                   class="border-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input"
-                  placeholder="Recipient Name" type="text" value="" id="recipient-name" />
+                  placeholder="Recipient Name" type="text" value="" id="recipient-name" required/>
               </div>
               <div class="form-group">
                 <label class="opacity-0" for="email-concern">Subject</label>
                 <textarea
                   class="border-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none transition focus:border-primary focus-visible:shadow-none form-input"
-                  rows="4" cols="50" placeholder="Subject" type="text" value="" id="email-concern" /></textarea>
+                  rows="4" cols="50" placeholder="Subject" type="text" value="" id="email-concern" required /></textarea>
               </div>
               <div class="form-group">
                 <button
@@ -57,24 +57,24 @@
           <div class="w-full hide" id="screen-two">
             <!-- Start screen two -->
             <h2>Screen 2 - Intro</h2>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
                 type="submit" value="Apologies for my delayed response…" id="intro-option-a">I’m busy with important
                 stuff, this is not one of those things.</button>
             </div>
-            <div class="w-full ">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-1s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
                 type="submit" value="Just checking in…" id="intro-option-b">Can you hurry up?!</button>
             </div>
-            <div class="w-full ">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-2s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
                 type="submit" value="Not sure this was meant for me…" id="intro-option-c">This isn’t my job – don’t ask
                 me to do it.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
                 type="submit"
@@ -83,7 +83,7 @@
                              >We’ve already discussed this, read your emails properly.</button>
 
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-4s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
                 type="submit" value="Friendly reminder, " id="intro-option-e">You’ve had more than enough time – where’s
@@ -95,19 +95,19 @@
           <div class="w-full hide" id="screen-three">
             <!-- Start screen two -->
             <h2>Screen 3 - body</h2>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit" value="Sorry to bother you again," id="body-option-a">Sorry, not sorry. Do your
                 job.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-1s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit" value="Apologies for being unclear." id="body-option-b">A five year old could understand
                 this.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-2s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit"
@@ -115,14 +115,14 @@
                 id="body-option-c"
               >Your mistake was stupid.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit" value="Going forward, I would prefer that you"
                 id="body-option-d"
               >You messed up. Don’t do it again.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-4s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit" value="I’m just cc’ing my colleague." id="body-option-d">You’re incompetent, and I’m
@@ -135,22 +135,22 @@
           <div class="w-full hide" id="screen-four">
             <!-- Start screen four -->
             <h2>Screen 4 - future</h2>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
                 type="submit" value="future-option-a" id="future-option-a">Future Option A</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-1s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
                 type="submit" value="future-option-b" id="future-option-b">Future Option B</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-2s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
                 type="submit" value="future-option-c" id="future-option-c">Future Option C</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
                 type="submit" value="future-option-d" id="future-option-d">Future Option D</button>
@@ -161,29 +161,29 @@
           <div class="w-full hide" id="screen-five">
             <!-- Start screen five -->
             <h2>Screen 5 - Outro</h2>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
                 type="submit" value="Thanks in advance." id="outro-option-a">You don’t have a choice.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-1s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
                 type="submit" value=":)" id="outro-option-b">You’ve really p*#!?d me off.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-2s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
                 type="submit" value="Awaiting your reply." id="outro-option-c">I needed that answer/document/info
                 yesterday, so HURRY UP.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
                 type="submit" value="Warm Regards," id="outro-option-d">I didn’t know it was possible to dislike someone
                 this much.</button>
             </div>
-            <div class="w-full">
+            <div class="w-full animate__animated animate__fadeIn animate__delay-4s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
                 type="submit" value="Should you need further clarification, please don’t hesitate to contact me."
@@ -206,18 +206,19 @@
       </div>
       <!-- Generated Mail section -->
       <div class="flex w-full lg:w-1/2 px-2">
-        <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-white px-10 text-center py-8">
+        <div class="flex-col w-full border border-dark-red overflow-hidden rounded-lg bg-white px-10 text-center py-8">
           <div class="text-6xl text-dark-red mb-6"><i class="fa-solid fa-envelope-circle-check"></i></div>
           <p class="w-full" id="subjectLine">Email Subject</p>
           <br>
-          <p class="w-full" id="messageText">This section is where the generated email text will be displayed</p>
-          <div class="w-full" id=""><textarea id="alltext"></textarea></div>
+          <p class="w-full w-full text-dark-red font-black text-4xl mb-10" id="messageText">This section is where the generated email text will be displayed</p>
+          <div class="w-full pt-10" id=""><textarea class="bordder-primary w-full rounded-md border p-10 bg-dark-purple text-white hide" rows="5" cols="50" id="alltext"></textarea></div>
           <br>
           <p class="w-full" id="signature"></p>
-                              <div class="w-full">
-              <button
-                class="border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 "
-                type="button" id="saveEmail">Save E-mail</button>
+              <div class="w-full">
+                <button class="max-w-xs float-left border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hide" type="button" id="copyBtn"><i class="fa-regular fa-copy"></i> Copy to clipboard</button>
+                <button
+                  class="max-w-xs float-left border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 "
+                  type="button" id="saveEmail"><i class="fa-regular fa-floppy-disk"></i> Save E-mail</button>
             </div>
         </div>
       </div>
@@ -227,7 +228,8 @@
         <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
           <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <h1>History</h1>
-          <p>History of previously generated email template</p>
+          <p id="prevTemplateDescription">History of previously generated email template</p>
+          
         </div>
       </div>
     </div>
@@ -235,3 +237,4 @@
   </div>
 </section>
 <script src="/js/generate.js"></script>
+<script src="/js/copy-clipboard.js"></script>
