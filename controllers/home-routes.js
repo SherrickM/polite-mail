@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const session = require("express-session");
+
 const {User} = require ('../models')
 const withAuth = require('../utils/auth');
 
@@ -40,13 +40,6 @@ router.get("/appreciation", withAuth, async (req, res) => {
  
 });
 
-  
-  
-
-  
-
-
-
 router.get("/login", async (req, res) => {
   if(req.session.logged_in){
     res.redirect("/generate");
@@ -59,9 +52,7 @@ router.get("/login", async (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
-router.get("/appreciation", (req, res) => {
-  res.render("appreciation");
-});
+
 router.get("/email_template", (req, res) => {
   res.render("email_template");
 });
