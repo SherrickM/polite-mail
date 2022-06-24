@@ -18,7 +18,7 @@ Template.init(
         //     type: DataTypes.STRING,
         // },
         message: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         subject: {
