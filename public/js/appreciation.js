@@ -49,7 +49,9 @@ const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
   const recipient_name = document.querySelector("#recipient-name").value.trim();
+
   const message = document.getElementById("alltext").value;
+
   const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
@@ -77,7 +79,6 @@ introEl.forEach((element) => {
 
     screenThree.classList.remove("hide");
     screenTwo.classList.add("hide");
-    
   });
 });
 // for loop to run body section and obtain value
