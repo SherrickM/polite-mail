@@ -159,6 +159,11 @@ header {
   background: rgb(83,44,134);
   background: linear-gradient(90deg, rgba(83,44,134,1) 0%, rgba(83,44,134,1) 35%, rgba(189,93,90,1) 100%);
 }
+#user-login-bar {
+  padding: 0 40px 10px;
+  background: rgb(83,44,134);
+  background: linear-gradient(90deg, rgba(83,44,134,1) 0%, rgba(83,44,134,1) 35%, rgba(189,93,90,1) 100%);
+}
 .logo img {
   max-width: 80%;
   margin: 10px auto 0;
@@ -252,4 +257,37 @@ footer {
 .primary-button {}
 .primary-button:hover {
   animation-name: slideInUp;
+}
+
+
+@media only screen and (max-width:1023px) {
+  #nav-container {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  header {
+    display: block !important;
+  }
+  #nav-container {
+    display: block !important;
+    text-align: center;
+  }
+  #user-login-bar {
+    text-align: center;
+    position: relative;
+    top: -1px;
+  }
+  nav .nav-divider {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+
+}
+
+@media only screen and (max-width:600px) {
+  nav a {font-size: 14px;}
 }
