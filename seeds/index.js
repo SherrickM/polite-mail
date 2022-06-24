@@ -3,7 +3,6 @@ const { User, Template} = require('../models');
 
 
 const userData = require('./userData.json');
-// const seedPaintings = require('./paintingData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
