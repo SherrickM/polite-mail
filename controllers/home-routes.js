@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const {User} = require ('../models')
+const {User, Template} = require ('../models')
 const withAuth = require('../utils/auth');
 
 router.get("/", (req, res) => {
@@ -65,7 +65,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/templates/:id', async (req, res) => {
+router.get('/template/:id', async (req, res) => {
   try {
     const templateData = await Template.findByPk(req.params.id, {
       include: [
