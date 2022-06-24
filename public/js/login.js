@@ -16,7 +16,7 @@ console.log(response);
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/generate');
+      document.location.replace('/selection');
     } else {
       alert(response.statusText);
     }
