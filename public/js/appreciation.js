@@ -49,7 +49,7 @@ const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
   const recipient_name = document.querySelector("#recipient-name").value.trim();
-  const message = document.querySelector("#messageText").value;
+  const message = document.getElementById("alltext").value;
   const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
@@ -60,7 +60,7 @@ const saveEmailTemplate = async (event) => {
     },
   });
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("/appreciation");
   } else {
     alert("Failed to create template");
   }
