@@ -211,13 +211,14 @@
           <p class="w-full" id="subjectLine">Email Subject</p>
           <br>
           <p class="w-full w-full text-dark-red font-black text-4xl mb-10" id="messageText">This section is where the generated email text will be displayed</p>
-          <div class="w-full pt-10" id=""><textarea class="bordder-primary w-full rounded-md border p-10 bg-dark-purple text-white" rows="5" cols="50" id="alltext"></textarea></div>
+          <div class="w-full pt-10" id=""><textarea class="bordder-primary w-full rounded-md border p-10 bg-dark-purple text-white hide" rows="5" cols="50" id="alltext"></textarea></div>
           <br>
           <p class="w-full" id="signature"></p>
               <div class="w-full">
+                <button class="max-w-xs float-left border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hide" type="button" id="copyBtn"><i class="fa-regular fa-copy"></i> Copy to clipboard</button>
                 <button
-                  class="border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 "
-                  type="button" id="saveEmail">Save E-mail</button>
+                  class="max-w-xs float-left border-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 "
+                  type="button" id="saveEmail"><i class="fa-regular fa-floppy-disk"></i> Save E-mail</button>
             </div>
         </div>
       </div>
@@ -236,3 +237,4 @@
   </div>
 </section>
 <script src="/js/generate.js"></script>
+<script src="/js/copy-clipboard.js"></script>
