@@ -4,11 +4,17 @@ const {User, Template} = require ('../models')
 const withAuth = require('../utils/auth');
 
 router.get("/", (req, res) => {
+  if(req.session.logged_in){
+    res.redirect("/selection");
+    return;
+  }
+
   res.render("landing");
+ 
 });
 
 router.get("/generate", withAuth, async (req, res) => {
-  console.log({session: req.session})
+  // console.log({session: req.session})
   const userData = await User.findByPk(req.session.user_id);
 
   // serialize (unpack)
@@ -24,12 +30,12 @@ router.get("/generate", withAuth, async (req, res) => {
  
 });
 router.get("/appreciation", withAuth, async (req, res) => {
-  console.log({session: req.session})
+  // console.log({session: req.session})
   const userData = await User.findByPk(req.session.user_id);
 
   // serialize (unpack)
   const user = userData.get({ plain: true });
-  console.log(user)
+  // console.log(user)
   res.render('appreciation', {
         user: {
           name: user.username,
@@ -39,6 +45,24 @@ router.get("/appreciation", withAuth, async (req, res) => {
     });
  
 });
+
+router.get("/selection", withAuth, async (req, res) => {
+  // console.log({session: req.session})
+  const userData = await User.findByPk(req.session.user_id);
+
+  // serialize (unpack)
+  const user = userData.get({ plain: true });
+  console.log(user)
+  res.render('selection', {
+        user: {
+          name: user.username,
+        
+        },
+         logged_in: true
+    });
+ 
+});
+
 
 router.get('/', async (req, res) => {
   try {
@@ -65,7 +89,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/template/:id', async (req, res) => {
+router.get('/template/:id',withAuth, async (req, res) => {
   try {
     const templateData = await Template.findByPk(req.params.id, {
       include: [
@@ -89,7 +113,7 @@ console.log(template);
 
 router.get("/login", async (req, res) => {
   if(req.session.logged_in){
-    res.redirect("/generate");
+    res.redirect("/selection");
     return;
   }
 
