@@ -1,5 +1,4 @@
 const firstName = document.getElementById("sender-name");
-
 const recipient_name = document.getElementById("recipient-name");
 const subject = document.getElementById("email-concern");
 const introEl = document.querySelectorAll(".intro");
@@ -16,6 +15,7 @@ const emailBody = document.querySelectorAll(".email-body");
 const future = document.querySelectorAll(".future");
 const outro = document.querySelectorAll(".outro");
 const mailSection = document.getElementById("mail-section");
+const header = document.getElementById("header");
 const userChoice = [];
 // const generateHTML =  ;
 
@@ -33,6 +33,8 @@ function start(event) {
   };
   screenOne.classList.add("hide");
   screenTwo.classList.remove("hide");
+  header.classList.add("hide");
+
 }
 
 // function to render the choices user selected in the email text box
