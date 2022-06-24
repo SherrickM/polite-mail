@@ -34,14 +34,13 @@ function start(event) {
   screenOne.classList.add("hide");
   screenTwo.classList.remove("hide");
   header.classList.add("hide");
-
 }
 
 // function to render the choices user selected in the email text box
-function generateEmail(){
-  messageText.textContent=userChoice;
-  alltext.value=userChoice;
-  
+function generateEmail() {
+  messageText.textContent = userChoice;
+  alltext.value = userChoice;
+
   $("#saveEmail").show();
 }
 
@@ -49,22 +48,22 @@ function generateEmail(){
 const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
-  const recipient_name = document.querySelector('#recipient-name').value.trim();
-  const message = document.querySelector('#messageText').textContent;
-  const subject = document.querySelector('#email-concern').value.trim();
+  const recipient_name = document.querySelector("#recipient-name").value.trim();
+  const message = document.querySelector("#messageText").textContent;
+  const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify({ recipient_name, message, subject }),
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
   if (response.ok) {
-    document.location.replace('/generate');
+    document.location.replace("/generate");
   } else {
-    alert('Failed to create template');
-  };
+    alert("Failed to create template");
+  }
 };
 
 // event listen to run start function after clicking submit
@@ -125,4 +124,4 @@ generateBtn.addEventListener("click", generateEmail);
 
 // use save email button to save template to DB
 
-  saveBtn.addEventListener('click', saveEmailTemplate);
+saveBtn.addEventListener("click", saveEmailTemplate);

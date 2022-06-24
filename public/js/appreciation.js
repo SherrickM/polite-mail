@@ -49,7 +49,7 @@ const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
   const recipient_name = document.querySelector("#recipient-name").value.trim();
-  const message = document.querySelector("#messageText").value;
+  const message = document.querySelector("#alltext").textContent;
   const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
@@ -60,7 +60,7 @@ const saveEmailTemplate = async (event) => {
     },
   });
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("/appreciation");
   } else {
     alert("Failed to create template");
   }
@@ -77,7 +77,6 @@ introEl.forEach((element) => {
 
     screenThree.classList.remove("hide");
     screenTwo.classList.add("hide");
-    
   });
 });
 // for loop to run body section and obtain value
