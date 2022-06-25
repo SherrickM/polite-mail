@@ -2,7 +2,7 @@
 
 ## Objective
 
--  Create an interactive site that allows users to choose a variety of badly worded (but honest) phrases, and turn it into a more appropriate email.
+- Create an interactive site that allows users to choose a variety of badly worded (but honest) phrases, and turn it into a more appropriate email.
 
 ## User Story
 
@@ -19,10 +19,10 @@
 ![alt text](/public/images/MAIL%20SELECTION.jpg)
 ![alt text](/public/images/GENERATE.jpg)
 
-
 ## Mock Up
 
 ## Group Members
+
 1. Christiana T
 2. Gedion A
 3. Hasnian K
@@ -41,7 +41,7 @@
 - Front end partially written with all modules installed | Hasnian & Geidon
 - Create wireframe & Color palette | Hasnian & Sherrick
 - Create Models | Christiana
-- Login & Sign-up Functionality | Gedion 
+- Login & Sign-up Functionality | Gedion
 - Professional Choices | Christiana & Sherrick
 
 ### Week 2
@@ -49,13 +49,13 @@
 - Bug Fixes | Gedion
 - JS for copy to clipboard | Hasnian
 - Created Model and Database for Users | Gedion
-- Secured Routes | Gedion 
+- Secured Routes | Gedion
 - JS Funionality for E-mail & Appreciation | Sherrick
 - Create Models| Christina
 - Login & Signup Functionality | Gedion
 - Appreciaion Choices | Sherrick
 - Update ReadMe | Sherrick
-- Appreication JS | Christina Gedion & Sherrick 
+- Appreication JS | Christina Gedion & Sherrick
 - Copy Clipboard Functionality | Hasnian
 
 ## GitHub Repo
