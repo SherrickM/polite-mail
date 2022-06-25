@@ -2,29 +2,22 @@
   <div class="container flex flex-row w-full">
     <div class="-mx-4 flex flex-wrap w-full">
       <div class="w-full px-4">
-        <h1 class="text-mauve">Page where we will generate the mail templates</h1>
-        <p class="text-2xl text-dark-gray">An introductory text to give some
-          direction on what is the process of generating a mail</p>
+        <h1 class="text-mauve font-black animate__animated animate__fadeInDown leading-10 mb-10">Professional E-Mail</h1>
+        <p class="max-w-5xl mx-auto text-center text-2xl text-dark-gray font-semibold animate__animated animate__fadeInLeftBig"><span class="text-dark-purple font-extrabold">Frustrated?!</span> Select the phrase that best describes how you feel and our app will structure your responses “The Write Way”. Fill out the form to start.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="flex flex-row justify-center w-full">
+<section class="flex flex-row justify-center w-full" id="intro-section">
   <div class="container flex flex-row">
-    <div class="flex -mx-2 mb-8">
-      <div class="flex w-full md:w-1/2 lg:w-1/4 px-2">
+    <div class="flex w-full -mx-2 mb-8 respond-col">
+      <div class="flex w-full md:w-1/2 lg:w-1/4 px-2 animate__animated animate__fadeInUpBig">
 
-        <div
-          class="flex-col border border-dark-red overflow-hidden rounded-lg bg-white px-5 text-center py-8"
-        >
-          <div class="text-6xl text-turquoise mb-6"><i
-              class="fa-brands fa-atlassian"
-            ></i></div>
-          <h2 id="header">Start the generate email, <span class="text-mauve font-black">{{user.name}}</span></h2>
-
-
-
+        <div class="flex-col w-full border border-dark-red overflow-hidden rounded-lg bg-white px-5 text-center py-8">
+          <div class="text-6xl text-turquoise mb-6">
+            <i class="fa-brands fa-atlassian"></i></div>
+            <h2 id="header">Start the generate email, <span class="text-mauve font-black">{{user.name}}</span></h2>
           <div class="w-full" id="screen-one">
             <!-- Start screen one FORM -->
             <form class="form user-input-form" id="user-input-form">
@@ -56,7 +49,7 @@
 
           <div class="w-full hide" id="screen-two">
             <!-- Start screen two -->
-            <h2>Intro</h2>
+            <h2>Select an intro:</h2>
             <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-purple py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 intro"
@@ -94,7 +87,7 @@
 
           <div class="w-full hide" id="screen-three">
             <!-- Start screen two -->
-            <h2>Body</h2>
+            <h2>Select the body: </h2>
             <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
@@ -115,14 +108,7 @@
                 id="body-option-c"
               >Your mistake was stupid.</button>
             </div>
-            <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
-              <button
-                class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
-                type="submit" value="Going forward, I would prefer that you"
-                id="body-option-d"
-              >You messed up. Don’t do it again.</button>
-            </div>
-            <div class="w-full animate__animated animate__fadeIn animate__delay-4s">
+                     <div class="w-full animate__animated animate__fadeIn animate__delay-4s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-gray py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 email-body"
                 type="submit" value="I’m just cc’ing my colleague." id="body-option-d">You’re incompetent, and I’m
@@ -134,33 +120,33 @@
 
           <div class="w-full hide" id="screen-four">
             <!-- Start screen four -->
-            <h2>Future</h2>
+            <h2>Select future reference option:</h2>
             <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
-                type="submit" value="future-option-a" id="future-option-a">Future Option A</button>
+                type="submit" value="Going forward, I’d prefer that you" id="future-option-a">“Don’t ever do that again.”</button>
             </div>
             <div class="w-full animate__animated animate__fadeIn animate__delay-1s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
-                type="submit" value="future-option-b" id="future-option-b">Future Option B</button>
+                type="submit" value="In the future, please refer to " id="future-option-b">Do I have to keep telling you this over and over again </button>
             </div>
             <div class="w-full animate__animated animate__fadeIn animate__delay-2s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
-                type="submit" value="future-option-c" id="future-option-c">Future Option C</button>
+                type="submit" value="Friendly Reminder," id="future-option-c">You’re getting on my nerves. Here’s a gentle reminder to ON HOW TO DO YOUR JOB</button>
             </div>
             <div class="w-full animate__animated animate__fadeIn animate__delay-3s">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 future"
-                type="submit" value="future-option-d" id="future-option-d">Future Option D</button>
+                type="submit" value="For future reference, " id="future-option-d">How can I explain this so even you could understand</button>
             </div>
           </div>
           <!-- End screen four -->
 
           <div class="w-full hide" id="screen-five">
             <!-- Start screen five -->
-            <h2>Outro</h2>
+            <h2>Select a conclusion</h2>
             <div class="w-full animate__animated animate__fadeIn">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 outro"
@@ -198,13 +184,13 @@
             <div class="w-full">
               <button
                 class="bordder-primary w-full cursor-pointer rounded-md border bg-mauve py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 "
-                type="button" id="generate">Generate</button>
+                type="button" id="generate">Generate my E-Mail</button>
             </div>
           </div>
         </div>
       </div>
       <!-- Generated Mail section -->
-      <div class="flex w-full lg:w-1/2 px-2">
+      <div class="flex w-full lg:w-1/2 px-2 animate__animated animate__fadeInUpBig animate__delay-1s">
         <div class="flex-col w-full border border-dark-red overflow-hidden rounded-lg bg-white px-10 text-center py-8">
           <div class="text-6xl text-dark-red mb-6"><i class="fa-solid fa-envelope-circle-check"></i></div>
           <p class="w-full" id="subjectLine">Email Subject</p>
@@ -221,9 +207,12 @@
             </div>
         </div>
       </div>
-<!-- History section -->
-      <div class="flex w-full md:w-1/2 lg:w-1/4 px-2">
-        <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
+
+
+      <!-- History section -->
+      <div class="flex w-full md:w-1/2 lg:w-1/4 px-2 animate__animated animate__fadeInUpBig animate__delay-2s">
+        <div class="flex-col w-full border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
+
           <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <h1>History</h1>
           <a class="template-section" href = "/history">Show History</a>
