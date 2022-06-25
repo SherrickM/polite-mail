@@ -102,8 +102,14 @@ router.get('/template/:id',withAuth, async (req, res) => {
 
     const template = templateData.get({ plain: true });
 console.log(template);
-    res.render('template', {
-      ...template,
+    res.render('template-details', {
+      template: {
+        id : template.id,
+        recipient : template.recipient_name,
+        subject : template.message,
+        username : template.user.username
+
+      },
       logged_in: req.session.logged_in
     });
   } catch (err) {

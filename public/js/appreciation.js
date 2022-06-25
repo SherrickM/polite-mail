@@ -49,7 +49,9 @@ const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
   const recipient_name = document.querySelector("#recipient-name").value.trim();
-  const message = document.querySelector("#alltext").value;
+
+  const message = document.getElementById("alltext").value;
+
   const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
