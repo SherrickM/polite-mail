@@ -242,6 +242,10 @@ nav .nav-divider {
   min-height: 80vh;
 }
 
+#history-section {
+  height: 300px;
+}
+
 footer {
   background: rgb(83,44,134);
   background: radial-gradient(circle, rgba(83,44,134,1) 0%, rgba(189,93,90,1) 100%);
@@ -261,6 +265,7 @@ footer {
 }
 
 /** Buttons **/
+
 .primary-button {}
 .primary-button:hover {
   animation-name: slideInUp;
