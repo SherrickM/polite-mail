@@ -18,8 +18,10 @@
 ![alt text](/public/images/LOGIN.jpg)
 ![alt text](/public/images/MAIL%20SELECTION.jpg)
 ![alt text](/public/images/GENERATE.jpg)
+[WireFrame](https://xd.adobe.com/view/731f228d-60e2-4d02-bf34-e17ea565d7de-264c/)
 
 ## Mock Up
+
 
 ## Group Members
 
@@ -43,6 +45,7 @@
 - Create Models | Christiana
 - Login & Sign-up Functionality | Gedion
 - Professional Choices | Christiana & Sherrick
+- Polished WireFrame | Hasnian
 
 ### Week 2
 
@@ -51,7 +54,7 @@
 - Created Model and Database for Users | Gedion
 - Secured Routes | Gedion
 - JS Funionality for E-mail & Appreciation | Sherrick
-- Create Models| Christina
+- Create Models| Christina.
 - Login & Signup JS Functionality | Gedion
 - Appreciaion Choices | Sherrick
 - Update ReadMe | Sherrick
