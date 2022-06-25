@@ -1,0 +1,26 @@
+{{!-- <p>{{#each template as |template|}}</p> --}}
+{{!-- <div class="w-full">
+  <h4><a href="/template/{{template.id}}">{{template.subject}}</a></h4>
+</div>
+{{/each}} --}}
+
+{{!-- {{log painting level="info"}} --}}
+<div class="flex w-full md:w-1/2 lg:w-1/4 px-2">
+  <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
+    <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
+    <h1>History</h1>
+    <h3 class="template-section" >Past Emails :</h3>
+    <section class="w-full border-dark-red">
+      <a href="/template/{{template.id}}">
+        <p>{{template.id}}</p>
+        <p>{{template.recipient}}</p>
+        <p>{{template.subject}}</p>
+        <p>{{template.username}}</p>
+      </a>
+    
+
+    </section>
+
+  </div>
+</div>
+</div>
