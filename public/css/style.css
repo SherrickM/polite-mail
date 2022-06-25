@@ -250,6 +250,10 @@ footer {
   background: rgb(83,44,134);
   background: radial-gradient(circle, rgba(83,44,134,1) 0%, rgba(189,93,90,1) 100%);
 }
+
+footer a:hover {
+  color: var(--black);
+}
 /** Input options **/
 
 .hide {
