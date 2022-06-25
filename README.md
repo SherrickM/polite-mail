@@ -20,9 +20,6 @@
 ![alt text](/public/images/GENERATE.jpg)
 [WireFrame](https://xd.adobe.com/view/731f228d-60e2-4d02-bf34-e17ea565d7de-264c/)
 
-## Mock Up
-
-
 ## Group Members
 
 1. Christiana T
