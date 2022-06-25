@@ -13,6 +13,13 @@
 
 ## Wire Frame
 
+![alt text](/public/images/HOMEPAGE-LANDING%20PAGE.jpg)
+![alt text](/public/images/SIGNUP.jpg)
+![alt text](/public/images/LOGIN.jpg)
+![alt text](/public/images/MAIL%20SELECTION.jpg)
+![alt text](/public/images/GENERATE.jpg)
+
+
 ## Mock Up
 
 ## Weekly Task
