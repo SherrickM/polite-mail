@@ -51,7 +51,7 @@
 - Created Model and Database for Users | Gedion
 - Secured Routes | Gedion
 - JS Funionality for E-mail & Appreciation | Sherrick
-- Create Models| Christina
+- Create Models| Christina.
 - Login & Signup JS Functionality | Gedion
 - Appreciaion Choices | Sherrick
 - Update ReadMe | Sherrick
