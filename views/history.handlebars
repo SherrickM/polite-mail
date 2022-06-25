@@ -13,13 +13,14 @@
                <div class="container">
                     <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
                     <h3 class="text-center text-3xl text-dark-purple font-extrabold template-section mb-8" >Your Past Emails:</h3>
-                    <div class="w-full rounded-lg border-dark-red p-10">                           
+                    <div class="w-full rounded-lg border-dark-red p-10"> 
                           <div class="text-2xl text-left text-dark-red font-extrabold template-section mb-8">Name : <span class="text-2xl font-normal text-left text-turquoise template-section mb-8">{{template.username}}</span></div>
                           <div class="text-2xl text-left text-dark-red font-extrabold template-section mb-8">Recipient : <span class="text-2xl font-normal text-left text-turquoise template-section mb-8">{{template.recipient}}</span></div>
                           <div class="text-2xl text-left text-dark-red font-extrabold template-section mb-8">Email :<br /> <span class="text-2xl font-normal text-left text-turquoise template-section mb-8">{{template.subject}}</span></div>
-                                            
+                          <div><button  class="bordder-primary w-full cursor-pointer rounded-md border bg-dark-red py-3 my-5 px-5 text-base text-white transition duration-300 ease-in-out hover:opacity-80 printPage text-3xl" href="#">PRINT <i class="fa-solid fa-print"></i> </button></div>
                       </div>
                </div>               
           </div>
      </div>
 </div>
+<script src="/js/print.js"></script>
