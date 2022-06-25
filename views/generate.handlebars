@@ -221,18 +221,13 @@
             </div>
         </div>
       </div>
-
-      <!-- History section -->
+<!-- History section -->
       <div class="flex w-full md:w-1/2 lg:w-1/4 px-2">
         <div class="flex-col border border-dark-red overflow-hidden rounded-lg bg-light-gray px-10 text-center py-8">
           <div class="text-6xl text-mauve mb-6"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <h1>History</h1>
-          <h3 class="template-section">Saved Templates</h3>
-          <section class="w-full">
-          {{#each template as |tempate|}}
-          {{> template-details}}
-          {{/each}}
-          </section>
+          <a class="template-section" href = "/history">Show History</a>
+          
         </div>
       </div>
     </div>

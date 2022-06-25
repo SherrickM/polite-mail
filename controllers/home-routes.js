@@ -102,7 +102,39 @@ router.get('/template/:id',withAuth, async (req, res) => {
 
     const template = templateData.get({ plain: true });
 console.log(template);
-    res.render('template-details', {
+    res.render('history', {
+      
+      template: {
+        id : template.id,
+        recipient : template.recipient_name,
+        subject : template.message,
+        username : template.user.username
+
+      },
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+router.get('/history',withAuth, async (req, res) => {
+  try {
+    const templateData = await Template.findByPk(req.session.user_id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username']
+        },
+      ],
+    });
+
+    const template = templateData.get({ plain: true });
+console.log(template);
+    res.render('history', {
+      user: {
+        name: template.user.username,
+      
+      },
       template: {
         id : template.id,
         recipient : template.recipient_name,

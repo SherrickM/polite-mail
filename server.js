@@ -27,7 +27,8 @@ const hbs = exphbs.create({ helpers });
 app.engine("handlebars", hbs.engine);
 
 // Default Layout For express handelebars
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({ defaultLayout: "main",
+                                  partialsDir: "views/partials" }));
 app.set("view engine", "handlebars");
 
 app.use(express.json());
