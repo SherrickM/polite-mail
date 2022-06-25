@@ -10,10 +10,10 @@ document.getElementById("copyBtn")
     });
 }
 
-$(document).ready(function () {
-     $("#generate").click(function () {
-          $("#copyBtn").css("display", "block");
-          $("#alltext").css("display", "block");
-     });
-});
+$(document).on("click", "#generate",function () {
+     $("#copyBtn").css("display", "block");
+     $("#alltext").css("display", "block");
+ });
+
+
 
