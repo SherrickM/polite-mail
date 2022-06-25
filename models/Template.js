@@ -14,9 +14,7 @@ Template.init(
         recipient_name: {
             type: DataTypes.STRING,
         },
-        // category: {
-        //     type: DataTypes.STRING,
-        // },
+       
         message: {
             type: DataTypes.TEXT,
             allowNull: false,

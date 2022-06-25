@@ -17,10 +17,10 @@ const future = document.querySelectorAll(".future");
 const outro = document.querySelectorAll(".outro");
 const mailSection = document.getElementById("mail-section");
 const userChoice = [];
-// const generateHTML =  ;
+
 
 let emailObject;
-// create function to capture form data. Save that info into an object thats global so that it can be used at a later time.
+
 
 // function to start generate email
 function start(event) {

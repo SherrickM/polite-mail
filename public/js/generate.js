@@ -17,10 +17,10 @@ const outro = document.querySelectorAll(".outro");
 const mailSection = document.getElementById("mail-section");
 const header = document.getElementById("header");
 const userChoice = [];
-// const generateHTML =  ;
+
 
 let emailObject;
-// create function to capture form data. Save that info into an object thats global so that it can be used at a later time.
+
 
 // function to start generate email
 function start(event) {
@@ -118,7 +118,7 @@ outro.forEach((element) => {
   });
 });
 
-// Add a fucntion to generate e-mail to hide container and display the template literal
+// Generate BTN Function
 
 generateBtn.addEventListener("click", generateEmail);
 
