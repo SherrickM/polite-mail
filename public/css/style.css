@@ -272,6 +272,19 @@ footer {
   #nav-container {
     flex-direction: row;
   }
+  .respond-col {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 25px !important;
+  }
+  .respond-col > div {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .respond-col > div > div {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width:991px) {
@@ -294,6 +307,13 @@ footer {
 @media only screen and (max-width:767px) {
   #responsive-padding-vertical {
     padding: 2em 1.5em !important;
+  }
+  #user-login-bar {
+    background: var(--dark-purple);
+    padding-top: 5px;
+  }
+  .main-content {
+    padding: 2rem 25px !important;
   }
 }
 
