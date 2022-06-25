@@ -48,13 +48,13 @@ function generateEmail() {
 const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
-  const recipient_name = document.querySelector("#recipient-name").value.trim();
-  const message = document.getElementById("alltext").value;
-  const subject = document.querySelector("#email-concern").value.trim();
+  const recipient_names = document.querySelector("#recipient-name").value.trim();
+  const messages = document.getElementById("alltext").value;
+  const subjects = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
     method: "POST",
-    body: JSON.stringify({ recipient_name, message, subject }),
+    body: JSON.stringify({ recipient_name: recipient_names, message: messages, subject: subjects }),
     headers: {
       "Content-Type": "application/json",
     },
