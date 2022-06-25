@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,7 +22,7 @@
     <div class="logo">
       <a href="/"> <img src="/images/logo-polite-mail.png" alt="Polite-Mail"> </a>
     </div>
-    <nav class="flex items-center text-base leading-5">
+    <nav class="flex items-center text-base leading-5 py-3">
       <div class="container mx-auto flex flex-col lg:flex-row list-none mr-auto" id="nav-container">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
@@ -30,11 +30,10 @@
         
         <a class="p-1 font-medium md:text-base sm:p-4" href="/generate">Professional E-mail</a> <span class="text-white text-2xl nav-divider">|</span>
         <a class="p-1 font-medium md:text-base sm:p-4" href="/appreciation">Appreciation Letter</a>
-        <button class="btn-logout border rounded-lg bg-opacity-20 py-3 px-6 text-base font-medium md:text-base duration-300 ease-in-out hover:bg-opacity-100 no-button" id="logout">logout</button>
+        <button class="btn-logout border rounded-lg bg-opacity-20 py-3 px-6 text-base font-medium md:text-base duration-300 ease-in-out hover:bg-opacity-100 no-button mt-1" id="logout">logout</button>
 
         {{else}}
         <a class="p-1 rounded-lg font-medium sm:p-4" href="/signup">signup</a>
-        <a class="p-1 rounded-lg font-medium sm:p-4" href="/contact">Contact</a>
         <a class="signUpBtn border rounded-lg bg-opacity-20 py-3 px-6 text-base font-medium duration-300 ease-in-out hover:bg-opacity-100" href="/login">login</a>        
         {{/if}}
   
@@ -47,7 +46,7 @@
     </nav>
   </header>
  <body>
-     {{#if logged_in}} <div class="w-full text-right text-white pb-2" id="user-login-bar"> You are currently logged in as <span class="text-dark-purple font-black"> {{user.name}}</span></div> {{/if}}
+     {{#if logged_in}} <div class="w-full text-right text-white pb-2" id="user-login-bar"> You are currently logged in as <span class="font-nato text-light-gray font-black"> {{user.name}}</span></div> {{/if}}
     <div class="main-content pt-20">
       {{{body}}}
     </div>

@@ -50,7 +50,9 @@ const saveEmailTemplate = async (event) => {
 
   const recipient_name = document.querySelector("#recipient-name").value.trim();
 
+
   const message = document.getElementById("alltext").value;
+
 
   const subject = document.querySelector("#email-concern").value.trim();
 
