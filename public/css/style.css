@@ -25,7 +25,9 @@ body {
 h1, h2, h3, h3, h5, h6 {
   font-family: 'Noto Serif', serif;
 }
-
+.font-nato {
+  font-family: 'Noto Serif', serif;
+}
 h1 {
   font-size: 3em !important;
 }
@@ -224,6 +226,11 @@ nav .nav-divider {
   position: relative;
   top:8px;
 }
+#user-login-bar {
+  text-align: center;
+  position: relative;
+  top: -1px;
+}
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -259,6 +266,7 @@ footer {
   animation-name: slideInUp;
 }
 
+/** Responsive media queries ***/
 
 @media only screen and (max-width:1023px) {
   #nav-container {
@@ -270,24 +278,28 @@ footer {
   header {
     display: block !important;
   }
+  #header .logo {
+    padding-bottom: 10px;
+  }
   #nav-container {
     display: block !important;
     text-align: center;
   }
-  #user-login-bar {
-    text-align: center;
-    position: relative;
-    top: -1px;
-  }
+
   nav .nav-divider {
     top: 0px;
   }
 }
 
 @media only screen and (max-width:767px) {
-
+  #responsive-padding-vertical {
+    padding: 2em 1.5em !important;
+  }
 }
 
 @media only screen and (max-width:600px) {
   nav a {font-size: 14px;}
+  .main-content a {
+    display: block;
+  }
 }
