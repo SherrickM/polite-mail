@@ -37,11 +37,11 @@ p {
 }
 
 a {
-  color: var(--dark);
+  color: var(--light-gray);
   text-decoration: none;
 }
 a:visited {
-  color: inherit;
+  color: var(--light-gray);
 }
 a:hover {
   color: var(--white);
@@ -239,7 +239,7 @@ nav .nav-divider {
   background-image: url(/images/background-pattern.jpg);
   /* height: 100vh; */
   height: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 footer {
