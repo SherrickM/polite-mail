@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
   res.render("landing");
  
 });
-
+// Route to render generate HB with authenication 
 router.get("/generate", withAuth, async (req, res) => {
   // console.log({session: req.session})
   const userData = await User.findByPk(req.session.user_id);
@@ -29,6 +29,7 @@ router.get("/generate", withAuth, async (req, res) => {
     });
  
 });
+// Route to render appreciation HB with authenication 
 router.get("/appreciation", withAuth, async (req, res) => {
   // console.log({session: req.session})
   const userData = await User.findByPk(req.session.user_id);
@@ -45,7 +46,7 @@ router.get("/appreciation", withAuth, async (req, res) => {
     });
  
 });
-
+// Route to render selection HB with authenication 
 router.get("/selection", withAuth, async (req, res) => {
   // console.log({session: req.session})
   const userData = await User.findByPk(req.session.user_id);
@@ -88,7 +89,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+// Future route to get template DB using user ID's
 router.get('/template/:id',withAuth, async (req, res) => {
   try {
     const templateData = await Template.findByPk(req.params.id, {
@@ -117,6 +118,7 @@ console.log(template);
     res.status(500).json(err);
   }
 });
+// Route to Render History
 router.get('/history',withAuth, async (req, res) => {
   try {
     const templateData = await Template.findByPk(req.session.user_id, {
@@ -148,7 +150,7 @@ console.log(template);
     res.status(500).json(err);
   }
 });
-
+// Login Route
 router.get("/login", async (req, res) => {
   if(req.session.logged_in){
     res.redirect("/selection");
@@ -157,18 +159,13 @@ router.get("/login", async (req, res) => {
 
   res.render("login");
 });
-
+// Sign-up Route
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-router.get("/email_template", (req, res) => {
-  res.render("email_template");
-});
 
-router.get("/home", async (req, res) => {
-  res.render("home");
-});
+
 
 
 
