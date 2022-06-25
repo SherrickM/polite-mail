@@ -52,7 +52,7 @@
 - Secured Routes | Gedion
 - JS Funionality for E-mail & Appreciation | Sherrick
 - Create Models| Christina
-- Login & Signup Functionality | Gedion
+- Login & Signup JS Functionality | Gedion
 - Appreciaion Choices | Sherrick
 - Update ReadMe | Sherrick
 - Appreication JS | Christina Gedion & Sherrick
