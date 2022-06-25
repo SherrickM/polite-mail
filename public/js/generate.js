@@ -38,7 +38,7 @@ function start(event) {
 
 // function to render the choices user selected in the email text box
 function generateEmail() {
-  messageText.textContent = userChoice;
+  messageText.textContent = subject.value;
   alltext.value = userChoice;
 
   $("#saveEmail").show();
@@ -48,11 +48,9 @@ function generateEmail() {
 const saveEmailTemplate = async (event) => {
   event.preventDefault();
 
-
-  const recipient_name = document.querySelector('#recipient-name').value.trim();
+  const recipient_name = document.querySelector("#recipient-name").value.trim();
   const message = document.getElementById("alltext").value;
-  const subject = document.querySelector('#email-concern').value.trim();
-
+  const subject = document.querySelector("#email-concern").value.trim();
 
   const response = await fetch(`/api/templates`, {
     method: "POST",
